@@ -4,7 +4,7 @@ machine:
 
 dependencies:
   pre:
-    - pip install pyyaml
+    - pip install pyyaml requests
 
 test:
   pre:
