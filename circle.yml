@@ -8,6 +8,6 @@ dependencies:
 
 test:
   pre:
-    - git clone https://github.com/ARMmbed/testbench-client.git
+    - git clone https://rainierwolfcastle:$GITHUB_PAT@/github.com/rainierwolfcastle/simplelog.git
   override:
     - nosetests
