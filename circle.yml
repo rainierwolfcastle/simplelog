@@ -2,12 +2,12 @@ machine:
   python:
     version: 2.7.10
 
-# dependencies:
-#   pre:
-#     - pip install pyyaml requests
+dependencies:
+  pre:
+    - pip install pyyaml requests
 
 test:
-  # pre:
-  #   - git clone https://rainierwolfcastle:$GITHUB_PAT@github.com/ARMmbed/testbench-client.git
+  pre:
+    - git clone https://rainierwolfcastle:$GITHUB_PAT@github.com/ARMmbed/testbench-client.git
   override:
-    - python test.py
+    - python testbench-client/testbench-client.py x86-osx-native 'git clone https://github.com/rainierwolfcastle/simplelog.git, yotta target x86-osx-native, yotta test'
