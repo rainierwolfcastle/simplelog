@@ -1,3 +1,0 @@
-commands:
-  - yotta target x86-osx-native
-  - yotta test
